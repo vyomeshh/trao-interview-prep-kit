@@ -19,7 +19,7 @@ The pipeline is deliberately sequenced:
 
 The model never decides schedule arithmetic or requirement coverage.
 
-## Stack
+## Tech stack
 
 - Next.js App Router + Tailwind CSS
 - Node.js + Express
@@ -130,7 +130,7 @@ The crawler:
 
 Public discussion is searched separately and its result titles/snippets are provided to the model with their source URLs. No search result is treated as authoritative company policy.
 
-## LLM sequencing and resilience
+## LLM 
 
 The job-description stage, each question category, company brief, and flashcards are separate generation calls.
 
@@ -167,7 +167,7 @@ Authentication uses a signed, HTTP-only JWT cookie. Protected kit queries always
 
 The API also validates request origins for browser writes and configures CORS from `ALLOWED_ORIGINS`.
 
-## Edge cases
+## Edge Cases
 
 - Invalid URL → structured error
 - 404/timeout/unreachable pages → warning and continue
