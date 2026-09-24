@@ -1,4 +1,4 @@
-# Automatic LLM routing
+# LLM routing
 
 The app uses `LLM_PROVIDER=auto` by default.
 
