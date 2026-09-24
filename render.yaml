@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: trao-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm run start:backend
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: gemini-3.8-flash
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openrouter/free
+      - key: SCRAPER_MAX_PAGES
+        value: 6
+      - key: SCRAPER_MAX_PAGE_BYTES
+        value: 500000
+      - key: SCRAPER_TIMEOUT_MS
+        value: 8000
+      - key: SCRAPER_MIN_DELAY_MS
+        value: 500

@@ -1,0 +1,51 @@
+{
+  "name": "trao-interview-prep-kit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"next dev\"",
+    "dev:backend": "node server.js",
+    "dev:frontend": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "start:backend": "node server.js",
+    "start:frontend": "next start",
+    "lint": "eslint .",
+    "test": "node --test tests/core.test.js",
+    "evaluate": "node scripts/evaluate.js",
+    "test:llm": "node scripts/test-llm.js",
+    "test:all": "npm test && npm run test:llm",
+    "test:router": "node scripts/test-router.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.23.0",
+    "axios": "^1.6.8",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.12",
+    "concurrently": "^9.2.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.2",
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.25.76",
+    "zustand": "^4.5.2",
+    "dotenv": "^18.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^16.3.6",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

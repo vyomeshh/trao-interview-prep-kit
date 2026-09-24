@@ -1,0 +1,14 @@
+[
+  {
+    "id": "case-01",
+    "jd": "Senior Full-Stack Engineer. Must have 3+ years experience with Next.js and Node.js. Must know MongoDB. Nice to have: experience with AI wrappers or OpenRouter API. You will build scalable web applications and lead architectural decisions.",
+    "company_url": "https://about.gitlab.com/",
+    "days": 4
+  },
+  {
+    "id": "case-02",
+    "jd": "Frontend Developer. Just a two-line description. Needs React.",
+    "company_url": "https://this-website-does-not-exist.com/",
+    "days": 2
+  }
+]
