@@ -210,6 +210,8 @@ The frontend and backend are intentionally separable:
 - Set all secrets through the deployment provider; never commit `.env`.
 
 Deployment credentials are intentionally not stored in source control.
+ Backend Link - "https://trao-interview-prep-kit-wz9y.onrender.com"
+ Frontend Link- "https://trao-interview-prep-kit-beige.vercel.app/"
 
 ## Known limitations
 
